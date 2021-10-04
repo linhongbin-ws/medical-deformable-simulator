@@ -7,7 +7,8 @@ from os.path import join, isfile
 import time
 
 # MODEL_XML_PATH = join('.','xmls', 'rope.xml')
-MODEL_XML_PATH = join('.','xmls', 'cloth.xml')
+# MODEL_XML_PATH = join('.','xmls', 'cloth.xml')
+MODEL_XML_PATH = join('.','xmls', 'human-skin-manipulate.xml')
 if not isfile(MODEL_XML_PATH):
     print(f"cannot find {MODEL_XML_PATH}")
 model = load_model_from_path(MODEL_XML_PATH)
